@@ -101,6 +101,20 @@
     </div>
 </section>
 
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"></div>
+            <div class="col-lg">
+                <div class="text-capitalize fs-60 lh-1"><span class="text-primary fw-700">High-Quality Customer-Focused Plumbing</span> Services In Melbourne</div>
+                <div class="py-3">
+                    <p class="text-dark pb-3">We guarantee our work and only recommend quality brands while taking into account customers' budgets. This translates to happy repeat customers and referrals!</p>
+                    <p class="text-dark pb-3">Melbourne First Choice Plumbing is a name you can trust for high-quality customer-focused plumbing services in Melbourne. Get in touch with a business that hundreds of residents in Melbourne turn to as their first choice for their plumbing needs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <footer>
     <div class="container">
         <div class="row justify-content-center justify-content-lg-between align-items-center">
