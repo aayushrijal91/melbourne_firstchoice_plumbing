@@ -1,5 +1,5 @@
-@function imgUrl($file, $path: "background") {
-    @return url("../images/" + $path + "/" + $file) no-repeat;
+@function imgUrl($file, $path: "background"){
+@return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
 section.banner {
@@ -7,18 +7,18 @@ section.banner {
 
     .banner_inner {
         background: $primary imgUrl('banner-inner.png') left bottom;
-        
+
         .banner_innermost {
             background: imgUrl('banner.jpg') right center;
             background-size: contain;
             padding: 72px 0 115px;
             color: $white;
-    
+
             .banner-cta {
                 background-color: $secondary;
                 padding: 43px 37px;
                 position: relative;
-    
+
                 .hot-water-systems {
                     position: absolute;
                     right: 18px;
@@ -68,11 +68,87 @@ section.form {
     }
 }
 
+section.about {
+    padding: 130px 0 70px;
+
+    .about-circle {
+        animation: rotation 5s infinite;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(-90deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+section.services {
+    padding: 96px 0 120px;
+    background: $primary imgUrl('services.png') bottom;
+    background-size: contain;
+    color: $white;
+
+    .first-choice {
+        padding: 84px 0 31px;
+        background: imgUrl('first-choice.png') left bottom, linear-gradient(180deg, #1599C8 0%, #1195C5 100%);
+    }
+
+    .limited-time {
+        background: #1BA2D3;
+        border: 1px solid #0E89B6;
+        display: inline-flex;
+        padding: 5px 22px;
+        position: relative;
+    }
+
+    .our-services {
+        .service-slider-nav {
+            .slick-slide {
+                background: #0D8AB8;
+                border: 1.21255px solid #29AAD9;
+                border-radius: 24.2511px;
+                height: 212px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 19px;
+                font-weight: 600;
+                padding: 16px;
+                margin: 70px 0;
+                transform: scale(0.6);
+                transition: 0.2s all;
+                
+                &.slick-active {
+                    transform: scale(0.8);
+                    
+                    &.slick-center {
+                        box-shadow: 0px 4.85021px 36.3766px #2FAEDC;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+
+        .service-slider {
+            .service-slider-content {
+                text-align: center;
+            }
+        }
+    }
+}
+
 footer {
     font-size: 0.875rem;
-    background-color: #221f1f;
-
-    @include media-breakpoint-down(sm) {
-        font-size: 0.61rem;
-    }
+    background-color: #030501;
+    padding: 28px 0;
 }

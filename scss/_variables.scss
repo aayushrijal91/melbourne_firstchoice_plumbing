@@ -28,10 +28,12 @@ $theme-colors: map-merge((
 
 $font-sizes: (
     128: 8rem,
+    79: 79px,
     60: 60px,
     44: 44px,
     38: 38px,
     36: 36px,
+    30: 30px,
     27: 27px,
     24: 24px,
     18: 18px,
@@ -144,3 +146,5 @@ $utilities: map-merge((
         )
     )
 ), $utilities);
+
+$enable-negative-margins: true;

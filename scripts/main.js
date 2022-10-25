@@ -10,6 +10,23 @@ document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
     });
 });
 
+$(() => {
+    $('.service-slider-nav').slick({
+        slidesToShow: 5,
+        centerMode: true,
+        arrows: false,
+        centerPadding: "220px",
+        autoplay: true,
+        asNavFor: '.service-slider'
+    });
+
+    $('.service-slider').slick({
+        slidesToShow: 1,
+        asNavFor: '.service-slider-nav',
+        arrows: false
+    })
+});
+
 $(window).on('scroll', () => {
     if ($(this).scrollTop() >= 600) {
         $('#return-to-top').fadeIn(300);

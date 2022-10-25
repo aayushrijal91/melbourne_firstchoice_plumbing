@@ -1,4 +1,3 @@
-
 <a href="javascript:" id="return-to-top">
 	<div class="d-flex justify-content-center align-items-center h-100 w-100">
 		<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#ffffff" class="bi bi-arrow-up" viewBox="0 0 16 16">
