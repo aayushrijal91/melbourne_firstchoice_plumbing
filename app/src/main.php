@@ -6,7 +6,7 @@
                     <?= renderImg("logo.png", "logo") ?>
                 </a>
             </div>
-            <div class="col-auto col-lg col-xl-auto">
+            <div class="col-auto col-lg col-xxl-auto">
                 <div class="text-dark-grey fw-600 fs-17 text-center"><span class="text-primary fw-800">We're Available 24/7</span> For Any Plumbing Service You Need</div>
             </div>
             <div class="col-auto">
@@ -16,12 +16,12 @@
             <div class="col-auto">
                 <div class="row gx-0 align-items-center">
                     <div class="col-12 col-md-auto">
-                        <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-0 text-white py-3 px-md-4">
+                        <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-0 text-white py-3 px-md-4 px-xl-3 px-xxl-4">
                             Call Today <?= $phone_number ?>
                         </a>
                     </div>
                     <div class="col-12 col-md-auto">
-                        <a href="#form" class="btn bordered border-primary rounded-0 text-primary py-3 px-md-5">
+                        <a href="#form" class="btn bordered border-primary rounded-0 text-primary py-3 px-md-5 px-xl-3 px-xxl-5">
                             Get A <span class="fw-800 px-1">FREE</span> Quote
                         </a>
                     </div>
@@ -55,7 +55,7 @@
 
 <section class="form" id="form">
     <div class="container-fluid">
-        <div class="row gy-5">
+        <div class="row gy-5 align-items-center">
             <div class="col-xl-6">
                 <div class="qualification">
                     <div class="row">
@@ -77,7 +77,7 @@
                 <form action="./src/form" method="POST">
                     <div class="text-primary fs-36 lh-1 pb-4"><span class="fw-800">Get In Contact</span> With Our Team</div>
                     <div class="row gy-4">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-xl-6 col-xxl-5">
                             <label>What is your full name</label>
                             <input type="text" class="form-control" name="name" placeholder="John Citizen" required>
                         </div>
@@ -85,11 +85,11 @@
                             <label>Your Contact Email</label>
                             <input type="text" class="form-control" name="name" placeholder="john@gmail.com" required>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg col-xl-6 col-xxl">
                             <label>Your Contact Number</label>
                             <input type="text" class="form-control" name="name" placeholder="Your Number" required>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-xl-6 col-xxl-12">
                             <label>What suburb is your property in?</label>
                             <input type="text" class="form-control" name="name" placeholder="Parramatta" required>
                         </div>
@@ -141,7 +141,7 @@
 <section class="services">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-11">
+            <div class="col-xxl-11">
                 <div class="first-choice">
                     <div class="row align-items-center gy-5">
                         <div class="col-lg-8">
@@ -259,7 +259,7 @@
             <div class="limited-time">Limited Time</div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-11 col-md-6 col-xl-3 bg-secondary text-white pt-5 pb-4">
+            <div class="col-11 col-md-6 col-xl-4 col-xxl-3 bg-secondary text-white pt-5 pb-4">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-auto text-end lh-1 fs-30">
                         <div>Senior</div>

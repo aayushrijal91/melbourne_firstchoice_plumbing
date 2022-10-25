@@ -5,7 +5,7 @@
 section.banner {
     padding: 0 12px;
     
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(xxl) {
         padding: 0 83px;
     }
 
@@ -49,7 +49,7 @@ section.banner {
 section.form {
     padding: 50px 0;
 
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(xxl) {
         padding: 50px 71px;
     }
 
@@ -59,9 +59,14 @@ section.form {
         color: $white;
         padding: 47px 69px 40px;
 
+        @include media-breakpoint-down(xxl) {
+            padding: 47px 16px;
+        }
+
         @include media-breakpoint-down(lg) {
             padding: 47px 16px;
         }
+
         @include media-breakpoint-down(sm) {
             padding: 47px 16px 0;
             background: $primary;
