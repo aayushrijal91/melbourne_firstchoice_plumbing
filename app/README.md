@@ -1,4 +1,4 @@
-# Landing page [Boilerplate](www.aiims.com.au)
+# Landing page [Melbourne First Choice Plumbing](http://www.melbournefirstchoiceplumbing.com.au/)
 
 This is a landing page boilerplate that uses PHP scripting language
 
@@ -8,7 +8,7 @@ Developer: [Aayush Rijal](https://www.aayushrijal.net)
 
 Contact: 0452637371
 
-[Github]()
+[Github](https://github.com/aayushrijal91/melbourne_firstchoice_plumbing)
 [Figma]()
 
 ## _Instruction_

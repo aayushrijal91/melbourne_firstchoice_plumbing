@@ -17,7 +17,17 @@ $(() => {
         arrows: false,
         centerPadding: "220px",
         autoplay: true,
-        asNavFor: '.service-slider'
+        asNavFor: '.service-slider',
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: 0,
+                    centerMode: false,
+                }
+            }
+        ]
     });
 
     $('.service-slider').slick({

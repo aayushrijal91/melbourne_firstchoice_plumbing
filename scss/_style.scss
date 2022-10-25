@@ -3,16 +3,24 @@
 }
 
 section.banner {
-    padding: 0 83px;
+    padding: 0 12px;
+    
+    @include media-breakpoint-up(md) {
+        padding: 0 83px;
+    }
 
     .banner_inner {
         background: $primary imgUrl('banner-inner.png') left bottom;
 
         .banner_innermost {
-            background: imgUrl('banner.jpg') right center;
-            background-size: contain;
-            padding: 72px 0 115px;
             color: $white;
+            padding: 72px 0 48px;
+            
+            @include media-breakpoint-up(md) {
+                background: imgUrl('banner.jpg') right center;
+                padding: 72px 0 115px;
+                background-size: contain;
+            }
 
             .banner-cta {
                 background-color: $secondary;
@@ -23,6 +31,15 @@ section.banner {
                     position: absolute;
                     right: 18px;
                     bottom: 0;
+
+                    @include media-breakpoint-down(sm) {
+                        right: 4px;
+                        width: 150px;
+                    }
+                }
+
+                @include media-breakpoint-down(sm) {
+                    padding: 34px 156px 34px 8px;
                 }
             }
         }
@@ -30,13 +47,22 @@ section.banner {
 }
 
 section.form {
-    padding: 50px 71px;
+    padding: 50px 0;
+
+    @include media-breakpoint-up(md) {
+        padding: 50px 71px;
+    }
 
     .qualification {
         background: $primary imgUrl('qualification.png') right center;
         background-size: contain;
         color: $white;
         padding: 47px 69px 40px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 47px 16px 0;
+            background: $primary;
+        }
     }
 
     form {
@@ -69,36 +95,110 @@ section.form {
 }
 
 section.about {
-    padding: 130px 0 70px;
+    padding: 48px 0 70px;
 
-    .about-circle {
-        animation: rotation 5s infinite;
+    @include media-breakpoint-up(md) {
+        padding: 130px 0 70px;
     }
 
-    @keyframes rotation {
-        0% {
-            transform: rotate(0deg);
+    .about-gallery {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .about-circle {
+            position: absolute;
+            top: -1rem;
+            animation: rotation 10s infinite;
+            animation-timing-function: ease-in;
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
         }
 
-        50% {
-            transform: rotate(-90deg);
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(-90deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
         }
 
-        100% {
-            transform: rotate(0deg);
+        .about-gallery-slider {
+            position: relative;
+
+            img {
+                border-radius: 40px;
+                overflow: hidden;
+
+                &.gal-1 {
+                    position: absolute;
+                    animation: display1 10s infinite;
+                }
+
+                &.gal-2 {
+                    animation: display2 10s infinite;
+                }
+            }
+
+            @keyframes display1 {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes display2 {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
         }
     }
+
 }
 
 section.services {
-    padding: 96px 0 120px;
+    padding: 48px 0;
     background: $primary imgUrl('services.png') bottom;
     background-size: contain;
     color: $white;
 
+    @include media-breakpoint-up(md) {
+        padding: 96px 0 120px;
+    }
+
     .first-choice {
-        padding: 84px 0 31px;
+        padding: 31px 0;
         background: imgUrl('first-choice.png') left bottom, linear-gradient(180deg, #1599C8 0%, #1195C5 100%);
+        
+        @include media-breakpoint-up(md) {
+            padding: 84px 0 31px;
+        }
     }
 
     .limited-time {
@@ -127,14 +227,18 @@ section.services {
                 margin: 70px 0;
                 transform: scale(0.6);
                 transition: 0.2s all;
-                
+
                 &.slick-active {
                     transform: scale(0.8);
-                    
+
                     &.slick-center {
                         box-shadow: 0px 4.85021px 36.3766px #2FAEDC;
                         transform: scale(1);
                     }
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin: 30px 0;
                 }
             }
         }

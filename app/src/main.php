@@ -1,13 +1,13 @@
 <header>
     <div class="container">
-        <div class="row justify-content-center justify-content-lg-between align-items-center py-4">
+        <div class="row justify-content-center justify-content-lg-between align-items-center py-4 gy-4">
             <div class="col-auto">
                 <a href="./">
                     <?= renderImg("logo.png", "logo") ?>
                 </a>
             </div>
             <div class="col-auto">
-                <div class="text-dark-grey fw-600 fs-17"><span class="text-primary fw-800">We're Available 24/7</span> For Any Plumbing Service You Need</div>
+                <div class="text-dark-grey fw-600 fs-17 text-center"><span class="text-primary fw-800">We're Available 24/7</span> For Any Plumbing Service You Need</div>
             </div>
             <div class="col-auto">
                 <div class="text-dark-grey fw-600 fs-14"><span class="text-primary fw-800">We're Open!</span> 10:35:12</div>
@@ -50,11 +50,12 @@
             </div>
         </div>
     </div>
+    <?= renderImg('banner.jpg', 'background', 'w-100 d-md-none') ?>
 </section>
 
 <section class="form" id="form">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row gy-5">
             <div class="col-lg-6">
                 <div class="qualification">
                     <div class="row">
@@ -70,6 +71,7 @@
                         </div>
                     </div>
                 </div>
+                <?= renderImg('qualification.png', 'background', 'w-100 d-md-none bg-primary') ?>
             </div>
             <div class="col-lg">
                 <form action="./src/form" method="POST">
@@ -103,15 +105,21 @@
 
 <section class="about">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <?= renderImg("about-circle.png", "lib", 'about-circle') ?>
+        <div class="row align-items-center gy-5">
+            <div class="col-lg-6 position-relative d-flex justify-content-center">
+                <div class="about-gallery">
+                    <?= renderImg("about-circle.png", "lib", 'about-circle') ?>
+                    <div class="about-gallery-slider">
+                        <?= renderImg('about-lib-1.jpg', 'lib', 'gal-1') ?>
+                        <?= renderImg('about-lib-2.jpg', 'lib', 'gal-2') ?>
+                    </div>
+                </div>
             </div>
             <div class="col-lg">
                 <div class="text-capitalize fs-60 lh-1"><span class="text-primary fw-700">High-Quality Customer-Focused Plumbing</span> Services In Melbourne</div>
                 <div class="py-4">
                     <p class="text-dark pb-3">We guarantee our work and only recommend quality brands while taking into account customers' budgets. This translates to happy repeat customers and referrals!</p>
-                    <p class="text-dark pb-3">Melbourne First Choice Plumbing is a name you can trust for high-quality customer-focused plumbing services in Melbourne. Get in touch with a business that hundreds of residents in Melbourne turn to as their first choice for their plumbing needs</p>
+                    <p class="text-dark pb-md-3">Melbourne First Choice Plumbing is a name you can trust for high-quality customer-focused plumbing services in Melbourne. Get in touch with a business that hundreds of residents in Melbourne turn to as their first choice for their plumbing needs</p>
                 </div>
                 <div class="row gx-0 align-items-center">
                     <div class="col-12 col-md-auto">
@@ -135,7 +143,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-11">
                 <div class="first-choice">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center gy-5">
                         <div class="col-lg-8">
                             <div class="row justify-content-center">
                                 <div class="col-11 col-xl-9">
@@ -283,26 +291,31 @@
 </section>
 <footer>
     <div class="container">
-        <div class="row justify-content-center justify-content-lg-between align-items-center">
+        <div class="row justify-content-center justify-content-lg-between align-items-center gy-4">
             <div class="col-auto">
                 <div class="row gx-2 gx-md-3 text-white justify-content-center">
-                    <div class="col-12 text-center pb-3 d-lg-none">
-                        <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
-                            <?= renderImg("aiims.png", "logo") ?>
-                        </a>
-                    </div>
                     <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
                     <div class="col-auto text-primary">|</div>
                     <div class="col-auto text-center"><?= $site ?></div>
                     <div class="col-auto text-primary">|</div>
-                    <div class="col-auto text-center">All Rights Reserved
-                    </div>
+                    <div class="col-auto text-center">All Rights Reserved</div>
                 </div>
             </div>
-            <div class="col-auto d-none d-lg-block">
-                <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
-                    <?= renderImg("aiims.png", "logo") ?>
-                </a>
+            <div class="col-auto">
+                <div class="row justify-content-center gy-4">
+                    <div class="col-12 col-md-auto">
+                        <div class="row gx-2 gx-md-3 text-white justify-content-center">
+                            <div class="col-auto text-center">Terms &amp; Conditions</div>
+                            <div class="col-auto text-primary">|</div>
+                            <div class="col-auto text-center">Privacy Policies</div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
+                            <?= renderImg("aiims.png", "logo") ?>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
