@@ -9,9 +9,18 @@
             <div class="col-auto col-lg col-xxl-auto">
                 <div class="text-dark-grey fw-600 fs-17 text-center"><span class="text-primary fw-800">We're Available 24/7</span> For Any Plumbing Service You Need</div>
             </div>
-            <div class="col-auto">
-                <div class="text-dark-grey fw-600 fs-14"><span class="text-primary fw-800">We're Open!</span> 10:35:12</div>
-
+            <div class="col">
+                <div class="row justify-content-center gx-1 text-dark-grey fw-600 fs-14 position-relative">
+                    <div class="col-1">
+                        <div class="pulse pulsating-circle"></div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="currently-open text-primary fw-800">We're Open!</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="current-time">3:11 PM</div>
+                    </div>
+                </div>
             </div>
             <div class="col-auto">
                 <div class="row gx-0 align-items-center">

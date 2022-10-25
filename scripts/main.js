@@ -50,6 +50,18 @@ $(() => {
     })
 });
 
+
+function setTime() {
+    let date = new Date();
+    let hr = date.getHours();
+    let mins = date.getMinutes();
+    let seconds = date.getSeconds();
+    
+    $(".current-time").html(hr + ":" + mins + ":" + seconds);
+}
+
+setInterval(setTime, 1000);
+
 $(window).on('scroll', () => {
     if ($(this).scrollTop() >= 600) {
         $('#return-to-top').fadeIn(300);
