@@ -2,10 +2,10 @@
 include __DIR__ . '/env.php';
 
 $site = "Melbourne First Choice Plumbing";
-$phone_number = "0432 406 340";
-$admin_email = 'arijal@aiims.com.au';
-$bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+$phone_number = "1300 001 775";
+$admin_email = 'info@mfcplumbing.com.au';
+// $bcc_email = "";
+$no_reply_email = 'info@melbournefirstchoiceplumbing.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 

@@ -84,6 +84,7 @@
             </div>
             <div class="col-lg">
                 <form action="./src/form" method="POST">
+                    <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
                     <div class="text-primary fs-36 lh-1 pb-4"><span class="fw-800">Get In Contact</span> With Our Team</div>
                     <div class="row gy-4">
                         <div class="col-lg-5 col-xl-6 col-xxl-5">
@@ -92,15 +93,15 @@
                         </div>
                         <div class="col-lg">
                             <label>Your Contact Email</label>
-                            <input type="text" class="form-control" name="name" placeholder="john@gmail.com" required>
+                            <input type="text" class="form-control" name="email" placeholder="john@gmail.com" required>
                         </div>
                         <div class="col-lg col-xl-6 col-xxl">
                             <label>Your Contact Number</label>
-                            <input type="text" class="form-control" name="name" placeholder="Your Number" required>
+                            <input type="text" class="form-control" name="phone" placeholder="Your Number" required>
                         </div>
                         <div class="col-12 col-xl-6 col-xxl-12">
                             <label>What suburb is your property in?</label>
-                            <input type="text" class="form-control" name="name" placeholder="Parramatta" required>
+                            <input type="text" class="form-control" name="suburb" placeholder="Parramatta" required>
                         </div>
                         <div class="col-12 pt-3">
                             <button type="submit" class="btn btn-primary w-100 rounded-0 text-white">Submit</button>
