@@ -17,6 +17,7 @@ $(() => {
         arrows: false,
         centerPadding: "220px",
         autoplay: true,
+        focusOnSelect: true,
         asNavFor: '.service-slider',
         responsive: [
             {

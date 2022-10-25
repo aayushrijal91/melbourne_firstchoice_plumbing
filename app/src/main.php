@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-auto">
+            <div class="col-md-auto">
                 <div class="row gx-0 align-items-center">
                     <div class="col-12 col-md-auto">
                         <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-0 text-white py-3 px-md-4 px-xl-3 px-xxl-4">
