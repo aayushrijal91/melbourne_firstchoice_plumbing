@@ -5,7 +5,7 @@
 section.banner {
     padding: 0 12px;
     
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         padding: 0 83px;
     }
 
@@ -16,7 +16,7 @@ section.banner {
             color: $white;
             padding: 72px 0 48px;
             
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(lg) {
                 background: imgUrl('banner.jpg') right center;
                 padding: 72px 0 115px;
                 background-size: contain;
@@ -49,7 +49,7 @@ section.banner {
 section.form {
     padding: 50px 0;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         padding: 50px 71px;
     }
 
@@ -59,6 +59,9 @@ section.form {
         color: $white;
         padding: 47px 69px 40px;
 
+        @include media-breakpoint-down(lg) {
+            padding: 47px 16px;
+        }
         @include media-breakpoint-down(sm) {
             padding: 47px 16px 0;
             background: $primary;
@@ -104,6 +107,7 @@ section.about {
     .about-gallery {
         position: relative;
         width: 100%;
+        overflow: hidden;
         display: flex;
         justify-content: center;
 

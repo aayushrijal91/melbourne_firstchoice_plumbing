@@ -20,6 +20,13 @@ $(() => {
         asNavFor: '.service-slider',
         responsive: [
             {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 3,
+                    centerPadding: 0,
+                }
+            },
+            {
                 breakpoint: 540,
                 settings: {
                     slidesToShow: 1,

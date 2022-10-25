@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-    <?= renderImg('banner.jpg', 'background', 'w-100 d-md-none') ?>
+    <?= renderImg('banner.jpg', 'background', 'w-100 d-lg-none') ?>
 </section>
 
 <section class="form" id="form">
@@ -59,11 +59,11 @@
             <div class="col-lg-6">
                 <div class="qualification">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-md-7 col-lg-8">
                             <div class="fs-44 lh-1"><span class="fw-700">Fully Qualified</span> &amp; Insured Plumbers</div>
                             <div class=" fs-18 pt-2 pb-3">Melbourne First Choice Plumbing is a name<br class="d-none d-lg-block"> you can trust for high-quality</div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="bg-tertiary p-3">
                                 <div class="fs-27 fw-800">Free CCTV Inspection</div>
                                 <div class="">With Any Blocked Drain Service</div>
@@ -166,7 +166,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg text-center text-lg-start">
                             <?= renderImg('badge.png', 'lib') ?>
                         </div>
                     </div>
@@ -259,7 +259,7 @@
             <div class="limited-time">Limited Time</div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-3 bg-secondary text-white pt-5 pb-4">
+            <div class="col-11 col-md-6 col-lg-3 bg-secondary text-white pt-5 pb-4">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-auto text-end lh-1 fs-30">
                         <div>Senior</div>
@@ -277,7 +277,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center align-items-center pt-5">
+        <div class="row justify-content-center align-items-center pt-5 g-5 g-lg-4">
             <div class="col-auto"><?= renderImg('everhot.png', 'logo') ?></div>
             <div class="col-auto"><?= renderImg('dux.png', 'logo') ?></div>
             <div class="col-auto"><?= renderImg('bosch.png', 'logo') ?></div>
@@ -303,7 +303,7 @@
             </div>
             <div class="col-auto">
                 <div class="row justify-content-center gy-4">
-                    <div class="col-12 col-md-auto">
+                    <div class="col-12 col-lg-auto">
                         <div class="row gx-2 gx-md-3 text-white justify-content-center">
                             <div class="col-auto text-center">Terms &amp; Conditions</div>
                             <div class="col-auto text-primary">|</div>
