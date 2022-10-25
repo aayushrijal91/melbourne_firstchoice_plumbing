@@ -1,12 +1,12 @@
 <header>
     <div class="container">
-        <div class="row justify-content-center justify-content-lg-between align-items-center py-4 gy-4">
+        <div class="row justify-content-center justify-content-xl-between align-items-center py-4 gy-4">
             <div class="col-auto">
                 <a href="./">
                     <?= renderImg("logo.png", "logo") ?>
                 </a>
             </div>
-            <div class="col-auto">
+            <div class="col-auto col-lg col-xl-auto">
                 <div class="text-dark-grey fw-600 fs-17 text-center"><span class="text-primary fw-800">We're Available 24/7</span> For Any Plumbing Service You Need</div>
             </div>
             <div class="col-auto">
@@ -36,7 +36,7 @@
         <div class="banner_innermost">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-xl-5">
+                    <div class="col-lg-10 col-xl-5">
                         <div class="bg-secondary px-4 py-3 lh-1 d-inline"><span class="fw-700">24/7</span> Emergency Plumbing</div>
                         <div class="fs-60 fw-400 lh-1 mt-5"><span class="fw-800">Melbourne First Choice Plumbing</span> High-Quality Customer-Focused</div>
                         <div class="py-4">Melbourne First Choice Plumbing is a name you can trust for high-quality customer-focused plumbing services in Melbourne. Get in touch with a business that hundreds of residents in Melbourne turn to as their first choice for their plumbing needs.</div>
@@ -50,13 +50,13 @@
             </div>
         </div>
     </div>
-    <?= renderImg('banner.jpg', 'background', 'w-100 d-lg-none') ?>
+    <?= renderImg('banner.jpg', 'background', 'w-100 d-xl-none') ?>
 </section>
 
 <section class="form" id="form">
     <div class="container-fluid">
         <div class="row gy-5">
-            <div class="col-lg-6">
+            <div class="col-xl-6">
                 <div class="qualification">
                     <div class="row">
                         <div class="col-md-7 col-lg-8">
@@ -123,12 +123,12 @@
                 </div>
                 <div class="row gx-0 align-items-center">
                     <div class="col-12 col-md-auto">
-                        <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-0 text-white py-3 px-md-4">
+                        <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-0 text-white py-3 px-md-4 px-lg-3 px-xl-4">
                             Call Today <?= $phone_number ?>
                         </a>
                     </div>
                     <div class="col-12 col-md-auto">
-                        <a href="#form" class="btn bordered border-primary rounded-0 text-primary py-3 px-md-5">
+                        <a href="#form" class="btn bordered border-primary rounded-0 text-primary py-3 px-md-5 px-lg-3 px-xl-5">
                             Get A <span class="fw-800 px-1">FREE</span> Quote
                         </a>
                     </div>
@@ -222,7 +222,7 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-xl-8">
+                <div class="col-lg-10 col-xl-8">
                     <div class="service-slider">
                         <div class="service-slider-content">
                             <div class="fs-60 lh-1 pb-2"><span class="fw-700">Blocked Drains</span> Across Melbourne</div>
@@ -259,7 +259,7 @@
             <div class="limited-time">Limited Time</div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-11 col-md-6 col-lg-3 bg-secondary text-white pt-5 pb-4">
+            <div class="col-11 col-md-6 col-xl-3 bg-secondary text-white pt-5 pb-4">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-auto text-end lh-1 fs-30">
                         <div>Senior</div>
