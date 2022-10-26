@@ -54,6 +54,27 @@
                             <div class="text-capitalize fs-24">hot water service replacement</div>
                             <?= renderImg('hot-water-systems.png', 'lib', 'hot-water-systems') ?>
                         </div>
+                        <div class="banner-slider mt-4">
+                            <div class="banner-slider-content">
+                                <div class="row align-items-center justify-content-around w-100 gy-4">
+                                    <div class="col-auto fs-44 fw-800 lh-1">10% OFF</div>
+                                    <div class="col-auto fs-24 fw-600 lh-1">Seniors<br>Discount</div>
+                                    <div class="col-auto"><?= renderImg('10-percent-discount.png', 'lib') ?></div>
+                                </div>
+                            </div>
+                            <div class="banner-slider-content">
+                                <div class="row align-items-center justify-content-around w-100 gy-4">
+                                    <div class="col-auto fs-60 fw-800 lh-1">$50 OFF</div>
+                                    <div class="col-auto fs-24 fw-600 lh-1">When You Book Online</div>
+                                </div>
+                            </div>
+                            <div class="banner-slider-content">
+                                <div class="row align-items-center justify-content-around w-100 gy-4">
+                                    <div class="col-12 fs-44 fw-800 lh-1">Free CCTV Inspection</div>
+                                    <div class="col-12 fs-24 fw-600 lh-1">With Any Blocked Drain Service</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,12 @@ document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
 });
 
 $(() => {
+    $('.banner-slider').slick({
+        slidesToShow: 1,
+        arrows: false,
+        autoplay: true,
+    });
+
     $('.service-slider-nav').slick({
         slidesToShow: 5,
         centerMode: true,

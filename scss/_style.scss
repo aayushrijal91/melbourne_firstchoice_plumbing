@@ -18,7 +18,6 @@ section.banner {
             
             @include media-breakpoint-up(xl) {
                 background: imgUrl('banner.jpg') right center;
-                padding: 72px 0 115px;
                 background-size: contain;
             }
 
@@ -40,6 +39,20 @@ section.banner {
 
                 @include media-breakpoint-down(sm) {
                     padding: 34px 156px 34px 8px;
+                }
+            }
+
+            .banner-slider {
+                background-color: $secondary;
+                .slick-track {
+                    display: flex;
+                }
+                
+                .banner-slider-content {
+                    padding: 24px 37px;
+                    display: flex;
+                    align-items: center;
+                    height: inherit;
                 }
             }
         }
