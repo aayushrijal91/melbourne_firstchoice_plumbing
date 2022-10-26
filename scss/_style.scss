@@ -17,41 +17,22 @@ section.banner {
             padding: 72px 0 48px;
             
             @include media-breakpoint-up(xl) {
+                padding: 72px 0 115px;
                 background: imgUrl('banner.jpg') right center;
                 background-size: contain;
             }
 
-            .banner-cta {
-                background-color: $secondary;
-                padding: 43px 37px;
-                position: relative;
-
-                .hot-water-systems {
-                    position: absolute;
-                    right: 18px;
-                    bottom: 0;
-
-                    @include media-breakpoint-down(sm) {
-                        right: 4px;
-                        width: 150px;
-                    }
-                }
-
-                @include media-breakpoint-down(sm) {
-                    padding: 34px 156px 34px 8px;
-                }
-            }
-
             .banner-slider {
                 background-color: $secondary;
+
                 .slick-track {
                     display: flex;
                 }
                 
                 .banner-slider-content {
-                    padding: 24px 37px;
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     height: inherit;
                 }
             }
@@ -105,7 +86,7 @@ section.form {
 
             &:focus {
                 outline: none;
-                box-shadow: 0;
+                box-shadow: none;
             }
         }
 

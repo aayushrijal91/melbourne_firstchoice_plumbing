@@ -49,26 +49,32 @@
                         <div class="bg-secondary px-4 py-3 lh-1 d-inline"><span class="fw-700">24/7</span> Emergency Plumbing</div>
                         <div class="fs-60 fw-400 lh-1 mt-5"><span class="fw-800">Melbourne First Choice Plumbing</span> High-Quality Customer-Focused</div>
                         <div class="py-4">Melbourne First Choice Plumbing is a name you can trust for high-quality customer-focused plumbing services in Melbourne. Get in touch with a business that hundreds of residents in Melbourne turn to as their first choice for their plumbing needs.</div>
-                        <div class="banner-cta lh-1">
-                            <div class="fs-38 fw-800">$100 Cashback On</div>
-                            <div class="text-capitalize fs-24">hot water service replacement</div>
-                            <?= renderImg('hot-water-systems.png', 'lib', 'hot-water-systems') ?>
-                        </div>
                         <div class="banner-slider mt-4">
                             <div class="banner-slider-content">
+                                <div class="row align-items-center justify-content-between w-100 gy-4">
+                                    <div class="col-auto">
+                                        <div class="fs-38 fw-800">$100 Cashback On</div>
+                                        <div class="text-capitalize fs-24">hot water service replacement</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <?= renderImg('hot-water-systems.png', 'lib', 'hot-water-systems') ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-slider-content px-4 px-lg-5">
                                 <div class="row align-items-center justify-content-around w-100 gy-4">
                                     <div class="col-auto fs-44 fw-800 lh-1">10% OFF</div>
                                     <div class="col-auto fs-24 fw-600 lh-1">Seniors<br>Discount</div>
                                     <div class="col-auto"><?= renderImg('10-percent-discount.png', 'lib') ?></div>
                                 </div>
                             </div>
-                            <div class="banner-slider-content">
+                            <div class="banner-slider-content px-4 px-lg-5">
                                 <div class="row align-items-center justify-content-around w-100 gy-4">
                                     <div class="col-auto fs-60 fw-800 lh-1">$50 OFF</div>
                                     <div class="col-auto fs-24 fw-600 lh-1">When You Book Online</div>
                                 </div>
                             </div>
-                            <div class="banner-slider-content">
+                            <div class="banner-slider-content px-4 px-lg-5">
                                 <div class="row align-items-center justify-content-around w-100 gy-4">
                                     <div class="col-12 fs-44 fw-800 lh-1">Free CCTV Inspection</div>
                                     <div class="col-12 fs-24 fw-600 lh-1">With Any Blocked Drain Service</div>
